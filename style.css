@@ -25,7 +25,7 @@
 /* header styles */
 
 header {
-  padding: 50px 120px;
+  padding: 50px 70px;
 }
 header nav {
   display: flex;
@@ -67,6 +67,9 @@ header .header-img-bg {
   width: 100%;
   align-items: center;
   text-align: center;
+}
+header .header-img-bg > img {
+  width: 100%;
 }
 header .other-site-link {
   display: flex;
@@ -140,8 +143,11 @@ main .popular-collection .button-holder {
 main .featured {
   display: flex;
   gap: 50px;
-  padding: 60px 120px;
+  padding: 60px 70px;
   align-items: center;
+}
+main .featured > img {
+  width: 100%;
 }
 main > .featured > .featured-title {
   font-family: Poppins;
@@ -222,6 +228,9 @@ footer .social-link i {
 /* tablet or medium devices */
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 30px 20px;
+  }
   header nav {
     flex-direction: column;
     text-align: center;
@@ -245,5 +254,8 @@ footer .social-link i {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 30px 20px;
+  }
+  main .featured {
+    padding: 20px 60px;
   }
 }
