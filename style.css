@@ -17,7 +17,8 @@
   background: #e02c6d;
   padding: 8px 20px;
 }
-.btn-primary > i {
+.btn-primary > i,
+.featured-btn > i {
   color: #fff;
 }
 
@@ -77,6 +78,9 @@ header .other-site-link {
 
 /* main style start */
 
+main .popular-collection {
+  padding: 0px 150px;
+}
 main .popular-collection h3 {
   text-align: center;
   font-size: 1.8rem;
@@ -86,7 +90,7 @@ main .popular-collection .popular-collection-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  padding: 50px 150px;
+  padding-top: 50px;
   justify-content: center;
 }
 main .popular-collection .popular-collection-content .card {
@@ -117,6 +121,65 @@ main .popular-collection .card .card-rating {
 main .popular-collection .card .card-rating i {
   color: #fb8200;
 }
+main .popular-collection .button-holder {
+  text-align: right;
+}
+.btn-main {
+  color: rgba(224, 44, 109, 0.87);
+  background: none;
+  border: none;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 20px 0;
+}
+.btn-main > i {
+  color: rgba(224, 44, 109, 0.87);
+}
+
+main .featured {
+  display: flex;
+  gap: 50px;
+  padding: 60px 120px;
+  align-items: center;
+}
+main > .featured > .featured-title {
+  font-family: Poppins;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+main > .featured .featured-btn {
+  border: none;
+  color: #fff;
+  background: #e02c6d;
+  padding: 8px 20px;
+  margin-top: 30px;
+}
+
+/* footer style start */
+
+footer {
+  background: #0a0826;
+  padding: 50px 0;
+  text-align: center;
+}
+footer > h3 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+}
+footer > p {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+footer .social-link i {
+  color: #fff;
+  margin-right: 20px;
+}
 
 /* responsive styles start */
 
@@ -127,11 +190,13 @@ main .popular-collection .card .card-rating i {
     padding: 30px 20px;
   }
   header nav,
-  .banner-container {
+  .banner-container,
+  .featured {
     flex-direction: column;
     text-align: center;
   }
-  header .banner-container {
+  header .banner-container,
+  .featured {
     flex-direction: column-reverse;
   }
   header .banner-content {
@@ -142,11 +207,15 @@ main .popular-collection .card .card-rating i {
     justify-content: space-around;
     margin: 20px 0;
   }
+  main .popular-collection {
+    padding: 0px 40px;
+  }
   main .popular-collection .popular-collection-content {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
-    padding: 30px 80px;
+  }
+  main .featured {
+    padding: 30px 20px;
   }
 }
 
@@ -167,6 +236,9 @@ main .popular-collection .card .card-rating i {
   }
   header .banner-content {
     padding: 0;
+  }
+  main .popular-collection {
+    padding: 0px 30px;
   }
   main .popular-collection .popular-collection-content {
     display: grid;
