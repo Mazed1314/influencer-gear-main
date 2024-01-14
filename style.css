@@ -67,6 +67,35 @@ header .header-img-bg {
   align-items: center;
   text-align: center;
 }
+header .other-site-link {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 50px 10px;
+}
+
+/* main style start */
+
+main .popular-collection h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+main .popular-collection .popular-collection-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 50px 150px;
+  justify-content: center;
+}
+main .popular-collection .popular-collection-content .card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 15px;
+}
+main .popular-collection .card img {
+  width: 100%;
+}
 
 /* responsive styles start */
 
@@ -92,6 +121,12 @@ header .header-img-bg {
     justify-content: space-around;
     margin: 20px 0;
   }
+  main .popular-collection .popular-collection-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 30px 80px;
+  }
 }
 
 /* tablet or medium devices */
@@ -111,5 +146,11 @@ header .header-img-bg {
   }
   header .banner-content {
     padding: 0;
+  }
+  main .popular-collection .popular-collection-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 30px 20px;
   }
 }
