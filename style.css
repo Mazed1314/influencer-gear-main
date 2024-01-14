@@ -96,6 +96,27 @@ main .popular-collection .popular-collection-content .card {
 main .popular-collection .card img {
   width: 100%;
 }
+main .popular-collection .card .card-title {
+  font-size: 28px;
+  font-weight: 500;
+}
+main .popular-collection .card .card-price {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 8px 0;
+}
+main .popular-collection .card .card-rating {
+  color: #5e6366;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  padding-bottom: 5px;
+}
+main .popular-collection .card .card-rating i {
+  color: #fb8200;
+}
 
 /* responsive styles start */
 
